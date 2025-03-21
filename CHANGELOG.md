@@ -4,6 +4,12 @@ FEATURES:
 
 IMPROVEMENTS:
 
+- communicator/ssh: Update connect retry behavior, make configurable [GH-13628]
+- guest/amazonlinux: Support networkd based configuration [GH-13626]
+- guest/rhel: Fix networking setup in recent versions [GH-13625]
+- host/darwin: Remove HFS from ISO creation [GH-13561]
+- provider/virtualbox: Add VirtioSCSI storage controller support [GH-13587]
+
 BUG FIXES:
 
 - command/box: Fix architecture constraints in outdated/updated command [GH-13601]
