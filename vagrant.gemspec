@@ -64,7 +64,6 @@ Gem::Specification.new do |s|
   root_path      = File.dirname(__FILE__)
   all_files      = Dir.chdir(root_path) { Dir.glob("**/{*,.*}") }
   all_files.reject! { |file| [".", ".."].include?(File.basename(file)) }
-  all_files.reject! { |file| file.start_with?("website/") }
   all_files.reject! { |file| file.start_with?("test/") }
   all_files.reject! { |file| file.start_with?("cmd/") }
   all_files.reject! { |file| file.start_with?("builtin/") }
